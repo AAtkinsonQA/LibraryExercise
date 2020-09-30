@@ -2,7 +2,7 @@ package items;
 
 public abstract class Item {
 	
-	private static int numOfItems;
+	private static int numOfItems = 0;
 	private int itemID;
 	private String name;
 	private boolean inStock;
@@ -37,6 +37,11 @@ public abstract class Item {
 
 	public void setInStock(boolean inStock) {
 		this.inStock = inStock;
+	}
+
+	@Override
+	public String toString() {
+		return "Item [itemID=" + itemID + ", name=" + name + ", inStock=" + inStock + "]";
 	}
 	
 }

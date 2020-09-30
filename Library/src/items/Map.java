@@ -22,5 +22,4 @@ public class Map extends Item{
 		return "Map [Area depicted = " + area + ", Name = " + getName() + "]";
 	}
 	
-	
 }

@@ -2,7 +2,7 @@ package items;
 
 public class Book extends Item {
 	
-	private int chapterNumber;
+	private int chapterNumber = 1;
 	private int numOfChapters;
 
 	public Book(String name, int numOfChapters) {
@@ -28,14 +28,5 @@ public class Book extends Item {
 		chapterNumber++;
 		return chapterNumber;
 	}
-
-	
-	
-	
-
-
-	
-	
-	
 
 }

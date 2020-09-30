@@ -5,18 +5,15 @@ import items.Item;
 
 public class Member {
 	
+	private static int numOfMembers = 0;
 	private int memberID;
 	private List<Item> withdrawnItems = new ArrayList<>();
 	private String name;
 	
-	public Member() {
+	public Member(String name) {
 		super();
-	}
-
-	public Member(int iD, List<Item> items, String name) {
-		super();
-		memberID = iD;
-		this.withdrawnItems = items;
+		numOfMembers++;
+		this.memberID = numOfMembers;
 		this.name = name;
 	}
 
